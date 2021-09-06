@@ -78,6 +78,8 @@ speed_test() {
 
 speed() {
     speed_test '9916'  'Los Angeles'
+    speed_test '6029'  'Seattle'
+    speed_test '35980'  'San Jose'
     speed_test '28910'  'Tokyo'
     speed_test '28912'  'Hong Kong'
     speed_test '13058'  'Singapore'
@@ -90,6 +92,9 @@ speed() {
     speed_test '35722'  'Tianjing CT'
     speed_test '27154'  'Tianjing CU'
     speed_test '17184'  'Tianjing CM'
+    speed_test '28225'  'Changsha CT'
+    speed_test '41009'  'Wuhan CU'
+    speed_test '29071'  'Changsha CM'
     speed_test '29071'  'Chengdu CT'
     speed_test '39012'  'Kunming CU'
     speed_test '17584'  'Chongqing CM'
