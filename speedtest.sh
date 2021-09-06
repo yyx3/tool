@@ -79,6 +79,8 @@ speed_test() {
 speed() {
     speed_test '9916'  'Los Angeles'
     speed_test '28910'  'Tokyo'
+    speed_test '6527'  'Seoul'
+    speed_test '5334'  'Taipei'
     speed_test '28912'  'Hong Kong'
     speed_test '13058'  'Singapore'
     speed_test '3633'  'Shanghai CT'
