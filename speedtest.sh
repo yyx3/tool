@@ -77,18 +77,18 @@ speed_test() {
 }
 
 speed() {
-    speed_test '9916'  '1.Los Angeles'
-    speed_test '6029'  '2.Seattle'
-    speed_test '35980'  '3.San Jose'
-    speed_test '28910'  '4.Tokyo'
-    speed_test '28912'  '5.Hong Kong'
-    speed_test '13058'  '6.Singapore'
-    speed_test '3633'  '7.Shanghai CT'
-    speed_test '24447'  '8.Shanghai CU'
-    speed_test '25637'  '9.Shanghai CM'
-    speed_test '29071'  '10.Chengdu CT'
-    speed_test '39012'  '11.Kunming CU'
-    speed_test '17584'  '12.Chongqing CM'
+    speed_test '9916'  'Los Angeles'
+    speed_test '6029'  'Seattle'
+    speed_test '35980'  'San Jose'
+    speed_test '28910'  'Tokyo'
+    speed_test '28912'  'Hong Kong'
+    speed_test '13058'  'Singapore'
+    speed_test '3633'  'Shanghai CT'
+    speed_test '24447'  'Shanghai CU'
+    speed_test '25637'  'Shanghai CM'
+    speed_test '29071'  'Chengdu CT'
+    speed_test '39012'  'Kunming CU'
+    speed_test '17584'  'Chongqing CM'
 }
 
 calc_disk() {
