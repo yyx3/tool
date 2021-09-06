@@ -91,10 +91,6 @@ speed() {
     speed_test '17584'  'Chongqing CM'
 }
 
-io_test() {
-    (LANG=C dd if=/dev/zero of=benchtest_$$ bs=64k count=16k conv=fdatasync && rm -f benchtest_$$ ) 2>&1 | awk -F, '{io=$NF} END { print io}' | sed 's/^[ \t]*//;s/[ \t]*$//'
-}
-
 calc_disk() {
     local total_size=0
     local array=$@
@@ -228,22 +224,6 @@ echo " Kernel                : $(_blue "$kern")"
 echo " TCP CC                : $(_blue "$tcpctrl")"
 echo " Virtualization        : $(_blue "$virt")"
 ipv4_info
-next
-io1=$( io_test )
-echo " I/O Speed(1st run)    : $(_yellow "$io1")"
-io2=$( io_test )
-echo " I/O Speed(2nd run)    : $(_yellow "$io2")"
-io3=$( io_test )
-echo " I/O Speed(3rd run)    : $(_yellow "$io3")"
-ioraw1=$( echo $io1 | awk 'NR==1 {print $1}' )
-[ "`echo $io1 | awk 'NR==1 {print $2}'`" == "GB/s" ] && ioraw1=$( awk 'BEGIN{print '$ioraw1' * 1024}' )
-ioraw2=$( echo $io2 | awk 'NR==1 {print $1}' )
-[ "`echo $io2 | awk 'NR==1 {print $2}'`" == "GB/s" ] && ioraw2=$( awk 'BEGIN{print '$ioraw2' * 1024}' )
-ioraw3=$( echo $io3 | awk 'NR==1 {print $1}' )
-[ "`echo $io3 | awk 'NR==1 {print $2}'`" == "GB/s" ] && ioraw3=$( awk 'BEGIN{print '$ioraw3' * 1024}' )
-ioall=$( awk 'BEGIN{print '$ioraw1' + '$ioraw2' + '$ioraw3'}' )
-ioavg=$( awk 'BEGIN{printf "%.1f", '$ioall' / 3}' )
-echo -e " Average I/O speed     : $(_yellow "$ioavg MB/s")"
 next
 install_speedtest && printf "%-18s%-18s%-20s%-12s\n" " Node Name" "Upload Speed" "Download Speed" "Latency"
 speed && rm -fr speedtest-cli
