@@ -82,18 +82,9 @@ speed() {
     speed_test '11703'  'Taipei'
     speed_test '28912'  'Hong Kong'
     speed_test '13058'  'Singapore'
-    speed_test '35722'  'Tianjin CT'
-    speed_test '5505'  'Beijing CU'
-    speed_test '25858'  'Beijing CM'
     speed_test '3633'  'Shanghai CT'
     speed_test '24447'  'Shanghai CU'
     speed_test '25637'  'Shanghai CM'
-    speed_test '27594'  'Guangzhou CT'
-    speed_test '26678'  'Guangzhou CU'
-    speed_test '15863'  'Nanning CM'
-    speed_test '29071'  'Chengdu CT'
-    speed_test '39012'  'Kunming CU'
-    speed_test '17584'  'Chongqing CM'
 }
 
 calc_disk() {
