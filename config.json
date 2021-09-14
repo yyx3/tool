@@ -74,7 +74,7 @@
                     "certificates": [
                         {
                             "certificateFile": "/etc/ssl/private/fullchain.pem",
-                            "keyFile": "/etc/ssl/private/key.pem",
+                            "keyFile": "/etc/ssl/private/privkey.pem",
                             "ocspStapling": 3600
                         }
                     ],
