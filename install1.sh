@@ -27,3 +27,7 @@ chmod 600 /root/.ssh/authorized_keys
 chmod 700 /root/.ssh
 
 systemctl restart sshd
+
+if [[ "$(set -o | grep 'emacs\|\bvi\b' | cut -f2 | tr '\n' ':')" != 'off:off:' ]]; then
+  echo "line editing is on"
+fi
