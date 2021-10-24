@@ -103,7 +103,7 @@
         {
             "protocol": "freedom",
             "settings": {
-                "domainStrategy": "UseIPv4" //CN域名
+                "domainStrategy": "UseIPv4" //使CN域名使用阿里DNS查询
             },
             "tag": "direct"
         },
