@@ -18,14 +18,14 @@
                 "domain": [
                     "geosite:category-ads-all"
                 ],
-                "outboundTag": "block" //阻止广告
+                "outboundTag": "block" //若请求进行DNS查询的域名是包含在geo数据库的广告类别，则走block出站（阻止）
             },
             {
                 "type": "field",
                 "domain": [
                     "geosite:cn"
                 ],
-                "outboundTag": "direct" //CN域名直连
+                "outboundTag": "direct" //若请求进行DNS查询的域名是包含在geo数据库的CN类别，则走direct出站（直连）
             },
             {
                 "type": "field",
@@ -33,7 +33,7 @@
                     "geoip:cn",
                     "geoip:private"
                 ],
-                "outboundTag": "direct" //CNIP直连
+                "outboundTag": "direct" //让CNIP走direct出站（直连）
             }
         ]
     },
