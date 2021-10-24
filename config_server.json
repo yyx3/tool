@@ -19,7 +19,7 @@
                     "geosite:category-ads-all",
                     "geosite:cn"
                 ],
-                "outboundTag": "block" //阻止广告，阻止代理服务器访问CN域名
+                "outboundTag": "block" //若请求进行DNS查询的域名是包含在geo数据库的广告和CN类别，则走block出站（阻止）
             },
             {
                 "type": "field",
@@ -27,7 +27,7 @@
                     "geoip:cn",
                     "geoip:private"
                 ],
-                "outboundTag": "block" //阻止代理服务器访问CNIP
+                "outboundTag": "block" //让CNIP走block出站（阻止）
             }
         ]
     },
