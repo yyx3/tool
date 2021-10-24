@@ -25,7 +25,7 @@
                 "domain": [
                     "geosite:cn"
                 ],
-                "outboundTag": "direct" //若请求进行DNS查询的域名是包含在geo数据库的CN类别，则走direct出站（直连）
+                "outboundTag": "direct" //若请求进行DNS查询的域名是包含在geo数据库的CN类别，则走direct出站（直连） PS未命中任何路由规则的域名默认使用"outbounds"的第1个出站配置即"proxy"连接到代理服务器
             },
             {
                 "type": "field",
