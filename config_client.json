@@ -98,7 +98,7 @@
                     "allowInsecure": false //跳过证书验证
                 }
             },
-            "tag": "proxy"
+            "tag": "proxy" //非CN域名使用代理服务器进行DNS查询
         },
         {
             "protocol": "freedom",
