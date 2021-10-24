@@ -102,7 +102,7 @@
         {
             "protocol": "freedom",
             "settings": {
-                "domainStrategy": "UseIPv4" //若请求内容是域名，使CN域名使用阿里的DNS查询
+                "domainStrategy": "UseIPv4" //若请求内容是域名，使CN域名使用阿里的DNS查询，若请求内容是IP，直连出站
             },
             "tag": "direct"
         },
