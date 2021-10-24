@@ -7,7 +7,7 @@
     },
     "dns": {
         "servers": [
-            "https+local://1.1.1.1/dns-query"
+            "https+local://1.1.1.1/dns-query" //Cloudflare的DNS
         ]
     },
     "routing": {
@@ -17,10 +17,9 @@
                 "type": "field",
                 "domain": [
                     "geosite:category-ads-all",
-                    "geosite:cn",
-                    "geosite:category-games@cn"
+                    "geosite:cn"
                 ],
-                "outboundTag": "block"
+                "outboundTag": "block" //阻止广告，阻止代理服务器访问CN域名
             },
             {
                 "type": "field",
@@ -28,19 +27,19 @@
                     "geoip:cn",
                     "geoip:private"
                 ],
-                "outboundTag": "block"
+                "outboundTag": "block" //阻止代理服务器访问CNIP
             }
         ]
     },
     "inbounds": [
         {
             "listen": "0.0.0.0",
-            "port": 443,
+            "port": 443, //端口
             "protocol": "vless",
             "settings": {
                 "clients": [
                     {
-                        "id": "chika",
+                        "id": "chika", //用户ID
                         "flow": "xtls-rprx-direct"
                     }
                 ],
@@ -86,7 +85,7 @@
         {
             "protocol": "freedom",
             "settings": {
-                "domainStrategy": "UseIPv4"
+                "domainStrategy": "UseIPv4" //使非广告，非CN域名使用Cloudflare的DNS查询
             },
             "tag": "direct"
         },
