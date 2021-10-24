@@ -85,7 +85,7 @@
         {
             "protocol": "freedom",
             "settings": {
-                "domainStrategy": "UseIPv4" //若请求内容是域名，使非广告，非CN域名使用Cloudflare的DNS查询，若请求内容是IP，直连出站
+                "domainStrategy": "UseIPv4" //若请求内容是域名，则使用Cloudflare的DNS进行查询，若请求内容是IP，使用本机网络出站
             },
             "tag": "direct"
         },
