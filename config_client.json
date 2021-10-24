@@ -10,7 +10,7 @@
             "https+local://223.5.5.5/dns-query" //阿里DNS
         ]
     },
-    "routing": {
+    "routing": { //非CN域名使用代理服务器进行DNS查询
         "domainStrategy": "Asls",
         "rules": [
             {
@@ -98,7 +98,7 @@
                     "allowInsecure": false //跳过证书验证
                 }
             },
-            "tag": "proxy" //非CN域名使用代理服务器进行DNS查询
+            "tag": "proxy"
         },
         {
             "protocol": "freedom",
