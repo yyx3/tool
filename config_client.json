@@ -23,8 +23,7 @@
             {
                 "type": "field",
                 "domain": [
-                    "geosite:cn",
-                    "geosite:category-games@cn"
+                    "geosite:cn"
                 ],
                 "outboundTag": "direct" //CN域名直连
             },
@@ -103,7 +102,7 @@
         {
             "protocol": "freedom",
             "settings": {
-                "domainStrategy": "UseIPv4" //使CN域名使用阿里DNS查询
+                "domainStrategy": "UseIPv4" //使CN域名使用阿里的DNS查询
             },
             "tag": "direct"
         },
