@@ -12,7 +12,7 @@
         "queryStrategy": "UseIPv4"
     },
     "routing": {
-        "domainStrategy": "Asls",
+        "domainStrategy": "IPIfNonMatch",
         "rules": [
             {
                 "type": "field",
