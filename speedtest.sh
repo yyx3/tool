@@ -15,7 +15,7 @@ speed_test() {
 }
 
 speed() {
-    speed_test '44932'  'Local Cloudflare'
+    speed_test '44932'  'Cloudflare'
     speed_test '9916'  'Los Angeles'
     speed_test '35980'  'San Jose'
     speed_test '28910'  'Tokyo'
