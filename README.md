@@ -34,5 +34,5 @@ clear && ./nf && echo && ./ytb
 
 ### 测速
 ```
-curl -sSL https://github.com/chika0801/tool/raw/main/speedtest.sh | bash
+curl -sSL https://raw.githubusercontent.com/chika0801/tool/main/speedtest.sh | bash
 ```
