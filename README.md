@@ -17,14 +17,24 @@ clear && curl -sSL yabs.sh | bash -s -- -i -g
 
 ### 回程路由
 ```
+curl -sSLO https://github.com/chika0801/tool/raw/main/besttrace && chmod +x besttrace
+```
+```
+clear && ./besttrace -q 1 你想测试的IP地址
+```
+或
+```
 curl -sSLO https://github.com/chika0801/tool/raw/main/worsttrace && chmod +x worsttrace
 ```
-
 ```
 clear && ./worsttrace 你想测试的IP地址
 ```
 
 ### 流媒体解锁
+```
+bash <(curl -L -s https://raw.githubusercontent.com/lmc999/RegionRestrictionCheck/main/check.sh)
+```
+或
 ```
 curl -sSLO https://github.com/chika0801/tool/raw/main/nf && curl -sSLO https://github.com/chika0801/tool/raw/main/ytb && chmod +x nf ytb
 ```
