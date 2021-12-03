@@ -23,6 +23,8 @@ speed() {
     speed_test '3633'  'Shanghai CT'
     speed_test '24447'  'Shanghai CU'
     speed_test '25637'  'Shanghai CM'
+    speed_test '25985'  'Gravelines'
+    
 }
 
 mkdir -p /root/speedtest-cli && curl -sSLo /root/speedtest-cli/speedtest https://github.com/chika0801/tool/raw/main/speedtest && chmod +x /root/speedtest-cli/speedtest
