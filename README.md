@@ -39,7 +39,7 @@ bash <(curl -L -s https://raw.githubusercontent.com/lmc999/RegionRestrictionChec
 curl -sSLO https://github.com/chika0801/tool/raw/main/nf && curl -sSLO https://github.com/chika0801/tool/raw/main/ytb && chmod +x nf ytb
 ```
 ```
-./nf && echo && ./ytb
+./nf && ./ytb
 ```
 
 ### 测速
