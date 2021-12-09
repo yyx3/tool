@@ -20,14 +20,14 @@ curl -sSL yabs.sh | bash -s -- -i -g
 curl -sSLO https://github.com/chika0801/tool/raw/main/besttrace && chmod +x besttrace
 ```
 ```
-./besttrace -q 1 你想测试的IP地址
+./besttrace -q 1 IP地址
 ```
 或
 ```
 curl -sSLO https://github.com/chika0801/tool/raw/main/worsttrace && chmod +x worsttrace
 ```
 ```
-./worsttrace 你想测试的IP地址
+./worsttrace IP地址
 ```
 
 ### 流媒体解锁
@@ -51,6 +51,5 @@ curl -sSL https://raw.githubusercontent.com/chika0801/tool/main/speedtest.sh | b
 curl -sSLO https://github.com/chika0801/tool/raw/main/speedtest && chmod +x speedtest
 ```
 ```
-./speedtest -s 你想测试的服务器ID
+./speedtest -s [服务器ID](https://bench.im/data.html)
 ```
-[服务器ID](https://bench.im/data.html)
