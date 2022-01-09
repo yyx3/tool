@@ -51,6 +51,6 @@ curl -sSL https://raw.githubusercontent.com/chika0801/tool/main/speedtest.sh | b
 curl -sSLO https://github.com/chika0801/tool/raw/main/speedtest && chmod +x speedtest
 ```
 ```
-./speedtest -s 44932
+./speedtest --accept-license -s 44932
 ```
 [服务器ID](https://bench.im/data.html)
