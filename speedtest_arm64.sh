@@ -25,6 +25,6 @@ speed() {
     speed_test '25637'  'Shanghai CM'
 }
 
-mkdir -p /root/speedtest-cli && curl -sSLo /root/speedtest-cli/speedtest https://github.com/chika0801/tool/raw/main/speedtestarm && chmod +x /root/speedtest-cli/speedtest
+mkdir -p /root/speedtest-cli && curl -sSLo /root/speedtest-cli/speedtest https://github.com/chika0801/tool/raw/main/speedtest_arm64 && chmod +x /root/speedtest-cli/speedtest
 clear && printf "%-18s%-18s%-20s%-12s\n" " Node Name" "Upload Speed" "Download Speed" "Latency"
 speed && rm -fr speedtest-cli && rm -fr .config
