@@ -17,7 +17,7 @@ speed_test() {
 speed() {
     speed_test '44932'  'Cloudflare'
     speed_test '14236'  'Los Angeles'
-    speed_test '28910'  'Tokyo'
+    speed_test '24333'  'Tokyo'
     speed_test '37390'  'Hong Kong'
     speed_test '20637'  'Singapore'
     speed_test '3633'  'Shanghai CT'
