@@ -49,7 +49,7 @@
             "settings": {
                 "servers": [
                     {
-                        "address": "45.149.156.191",
+                        "address": "落地机IP",
                         "port": 60001,
                         "method": "AES-128-GCM",
                         "password": "8tetnZHnBJcrnbjIpTi9fQ==",
