@@ -16,13 +16,16 @@ speed_test() {
 
 speed() {
     speed_test '44932'  'Cloudflare'
-    speed_test '14236'  'Los Angeles'
-    speed_test '44988'  'Tokyo'
-    speed_test '44745'  'Hong Kong'
-    speed_test '45895'  'Singapore'
-    speed_test '3633'  'Shanghai CT'
-    speed_test '24447'  'Shanghai CU'
-    speed_test '25637'  'Shanghai CM'
+    speed_test '9916'  'Los Angeles(9916)'
+    speed_test '28910'  'Tokyo(28910)'
+    speed_test '28912'  'Hong Kong(28912)'
+    speed_test '45895'  'Singapore(41358)'
+    speed_test '3633'  'Shanghai CT(3633)'
+    speed_test '24447'  'Shanghai CU(24447)'
+    speed_test '25637'  'Shanghai CM(25637)'
+    speed_test '36996'  'Guiyang CT(36996)'
+    speed_test '39012'  'Kunming CU(39012)'
+    speed_test '17584'  'Chongqing CM(17584)'
 }
 
 mkdir -p /root/speedtest-cli && curl -sSLo /root/speedtest-cli/speedtest https://github.com/chika0801/tool/raw/main/speedtest && chmod +x /root/speedtest-cli/speedtest
