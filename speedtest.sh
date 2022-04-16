@@ -22,10 +22,11 @@ speed() {
     speed_test '26654'  'Singapore'
     speed_test '3633'  'Shanghai CT'
     speed_test '24447'  'Shanghai CU'
+    speed_test '25637'  'Shanghai CM'
     speed_test '26352'  'Nanjing CU'
     speed_test '13704'  'Nanjing CU'
     speed_test '27249'  'Nanjing CM'
-    speed_test '37522'  'TianJin CU'
+    speed_test '37522'  'TianJin CT'
     speed_test '43752'  'Beijing CU'
     speed_test '25858'  'Beijing CM'
 }
