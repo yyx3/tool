@@ -20,7 +20,7 @@ speed() {
     speed_test '28910'  'Tokyo'
     speed_test '28912'  'Hong Kong'
     speed_test '26654'  'Singapore'
-    speed_test '11703'  'Singapore'
+    speed_test '11703'  'Taipei'
     speed_test '3633'  'Shanghai CT'
     speed_test '24447'  'Shanghai CU'
     speed_test '26850'  'Wuxi CM'
