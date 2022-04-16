@@ -17,15 +17,15 @@ speed_test() {
 speed() {
     speed_test '44932'  'Cloudflare'
     speed_test '9916'  'Los Angeles'
+    speed_test '6030'  'New York'
     speed_test '28910'  'Tokyo'
     speed_test '28912'  'Hong Kong'
-    speed_test '45895'  'Singapore'
+    speed_test '26654'  'Singapore'
+    speed_test '9913'  'Amsterdam'
+    speed_test '46685'  'Moscow'
     speed_test '3633'  'Shanghai CT'
     speed_test '24447'  'Shanghai CU'
-    speed_test '25637'  'Shanghai CM'
-    speed_test '36996'  'Guiyang CT'
-    speed_test '39012'  'Kunming CU'
-    speed_test '17584'  'Chongqing CM'
+    speed_test '26850'  'Wuxi CM'
 }
 
 mkdir -p /root/speedtest-cli && curl -sSLo /root/speedtest-cli/speedtest https://github.com/chika0801/tool/raw/main/speedtest && chmod +x /root/speedtest-cli/speedtest
