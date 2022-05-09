@@ -1,10 +1,5 @@
 ## VPS测试工具
 
-### 安装curl
-```
-apt update -y && apt install -y curl
-```
-
 ### 综合
 ```
 curl -sSL http://ilemonra.in/LemonBenchIntl | bash -s fast
