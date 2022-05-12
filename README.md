@@ -16,7 +16,7 @@ curl -sSLO https://github.com/chika0801/tool/raw/main/besttrace && chmod +x best
 ```
 
 ```
-./besttrace -q 1 IP地址
+./besttrace -q 1 202.96.199.132 && ./besttrace -q 1 211.95.72.1 && ./besttrace -q 1 211.136.112.50
 ```
 
 ### 流媒体解锁
