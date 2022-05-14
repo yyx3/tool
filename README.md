@@ -5,6 +5,11 @@
 curl -sSL http://ilemonra.in/LemonBenchIntl | bash -s fast
 ```
 
+或
+```
+curl -sL yabs.sh | bash
+```
+
 ### 硬盘
 ```
 curl -sSL yabs.sh | bash -s -- -i -g
