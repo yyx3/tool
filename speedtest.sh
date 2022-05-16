@@ -27,7 +27,7 @@ speed() {
     speed_test '27249'  'Nanjing CM'
     speed_test '28225'  'Changsha CT'
     speed_test '39012'  'Kunming CU'
-    speed_test '17584'  'Chongqing CM'
+    speed_test '16398'  'Guiyang CM'
 }
 
 mkdir -p /root/speedtest-cli && curl -sSLo /root/speedtest-cli/speedtest https://github.com/chika0801/tool/raw/main/speedtest && chmod +x /root/speedtest-cli/speedtest
