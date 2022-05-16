@@ -26,7 +26,7 @@ speed() {
     speed_test '13704'  'Nanjing CU'
     speed_test '27249'  'Nanjing CM'
     speed_test '28225'  'Changsha CT'
-    speed_test '39012'  'Kunming CU'
+    speed_test '4870'  'Changsha CU'
     speed_test '16398'  'Guiyang CM'
 }
 
