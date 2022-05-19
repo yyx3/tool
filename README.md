@@ -12,7 +12,7 @@ curl -sL yabs.sh | bash -s -- -i -g
 
 ### 回程路由
 ```
-curl -sSLO https://github.com/chika0801/tool/raw/main/besttrace && chmod +x besttrace
+curl -LO https://github.com/chika0801/tool/raw/main/besttrace && chmod +x besttrace
 ```
 
 ```
@@ -27,7 +27,7 @@ bash <(curl -L -s https://raw.githubusercontent.com/lmc999/RegionRestrictionChec
 或
 
 ```
-curl -sSLo nf https://github.com/sjlleo/netflix-verify/releases/download/2.61/nf_2.61_linux_amd64 && curl -sSLo ytb https://github.com/sjlleo/TubeCheck/releases/download/1.0Beta/tubecheck_1.0beta_linux_amd64 && chmod +x nf ytb
+curl -Lo nf https://github.com/sjlleo/netflix-verify/releases/download/2.61/nf_2.61_linux_amd64 && curl -Lo ytb https://github.com/sjlleo/TubeCheck/releases/download/1.0Beta/tubecheck_1.0beta_linux_amd64 && chmod +x nf ytb
 ```
 
 ```
@@ -36,13 +36,13 @@ curl -sSLo nf https://github.com/sjlleo/netflix-verify/releases/download/2.61/nf
 
 ### 测速
 ```
-curl -sSL https://raw.githubusercontent.com/chika0801/tool/main/speedtest.sh | bash
+curl -L https://raw.githubusercontent.com/chika0801/tool/main/speedtest.sh | bash
 ```
 
 或
 
 ```
-curl -sSLO https://github.com/chika0801/tool/raw/main/speedtest && chmod +x speedtest
+curl -LO https://github.com/chika0801/tool/raw/main/speedtest && chmod +x speedtest
 ```
 
 ```
