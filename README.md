@@ -21,7 +21,7 @@ curl -LO https://github.com/chika0801/tool/raw/main/besttrace && chmod +x besttr
 
 ### 流媒体解锁
 ```
-bash <(curl -L -s https://raw.githubusercontent.com/lmc999/RegionRestrictionCheck/main/check.sh)
+bash <(curl -L -s check.unlock.media)
 ```
 
 或
