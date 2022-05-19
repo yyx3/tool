@@ -7,7 +7,7 @@ curl -fsSL http://ilemonra.in/LemonBenchIntl | bash -s fast
 
 ### 硬盘
 ```
-curl -sL yabs.sh | bash -s -- -f -g
+curl -sL yabs.sh | bash -s -- -i -g
 ```
 
 ### 回程路由
