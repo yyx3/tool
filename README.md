@@ -2,18 +2,12 @@
 
 ### 综合
 ```
-curl -sSL http://ilemonra.in/LemonBenchIntl | bash -s fast
-```
-
-或
-
-```
-curl -sL yabs.sh | bash
+curl -fsSL http://ilemonra.in/LemonBenchIntl | bash -s fast
 ```
 
 ### 硬盘
 ```
-curl -sSL yabs.sh | bash -s -- -i -g
+curl -sL yabs.sh | bash -s -- -f -g
 ```
 
 ### 回程路由
