@@ -51,7 +51,7 @@ curl -LO https://github.com/chika0801/tool/raw/main/speedtest && chmod +x speedt
 ```
 
 ```
-./speedtest --accept-license -s 44932
+./speedtest --accept-license -s 服务器ID
 ```
 
 [服务器ID](https://bench.im/data.html)
