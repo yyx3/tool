@@ -22,9 +22,6 @@ speed() {
     speed_test '44745'  'Hong Kong'
     speed_test '45895'  'Singapore'
     speed_test '49365'  'San Jose'
-    speed_test '45852'  'Kansas City'
-    speed_test '30561'  'Ashburn'
-    speed_test '44806'  'Moscow'
 }
 
 mkdir -p /root/speedtest-cli && curl -sSLo /root/speedtest-cli/speedtest https://github.com/chika0801/tool/raw/main/speedtest_arm64 && chmod +x /root/speedtest-cli/speedtest
