@@ -17,7 +17,7 @@ speed_test() {
 speed() {
     speed_test '5396'  'Suzhou CT'
     speed_test '45170'  'Wuxi CU'
-    speed_test '26850'  'Wuxi CM'
+    speed_test '15863'  'Nanning CM'
     speed_test '44988'  'Tokyo 1'
     speed_test '28910'  'Tokyo 2'
     speed_test '21569'  'Tokyo 3'
