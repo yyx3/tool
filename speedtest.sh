@@ -18,7 +18,7 @@ speed() {
     speed_test '44988'  'Tokyo (Misaka)'
     speed_test '44745'  'Hong Kong'
     speed_test '45895'  'Singapore'
-    speed_test '28910'  'Tokyo (fdcservers)'
+    speed_test '28910'  'Tokyo (fdc)'
     speed_test '28912'  'Hong Kong'
     speed_test '26654'  'Singapore'
     speed_test '21569'  'Tokyo (i3D)'
