@@ -1,6 +1,7 @@
 ## VPS测试工具
 
 
+
 ### 综合
 ```
 curl -fsSL http://ilemonra.in/LemonBenchIntl | bash -s fast
@@ -14,13 +15,8 @@ curl -sL yabs.sh | bash -s -- -i -g
 
 
 ### 回程路由
-```
-curl -LO https://github.com/chika0801/tool/raw/main/besttrace && chmod +x besttrace
-```
+[NextTrace Enhanced](https://github.com/OwO-Network/nexttrace-enhanced)
 
-```
-./besttrace -q 1 202.96.199.132 && ./besttrace -q 1 211.95.72.1 && ./besttrace -q 1 211.136.112.50
-```
 
 
 ### 流媒体解锁
