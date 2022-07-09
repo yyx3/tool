@@ -1,30 +1,27 @@
 ## VPS测试工具
 
-
-
 ### 综合
 ```
 curl -fsSL http://ilemonra.in/LemonBenchIntl | bash -s fast
 ```
-
 
 ### CPU
 ```
 curl -sL yabs.sh | bash -s -- -f -i
 ```
 
-
-
 ### 硬盘
 ```
 curl -sL yabs.sh | bash -s -- -i -g
 ```
 
+### 网络
+```
+curl -sL yabs.sh | bash -s -- -f -g
+```
 
 ### 回程路由
 [NextTrace Enhanced](https://github.com/OwO-Network/nexttrace-enhanced)
-
-
 
 ### 流媒体解锁
 ```
@@ -40,7 +37,6 @@ curl -Lo nf https://github.com/sjlleo/netflix-verify/releases/download/2.61/nf_2
 ```
 ./nf && ./ytb
 ```
-
 
 ### 测速
 ```
