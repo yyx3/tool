@@ -8,6 +8,13 @@ curl -fsSL http://ilemonra.in/LemonBenchIntl | bash -s fast
 ```
 
 
+### CPU
+```
+curl -sL yabs.sh | bash -s -- -f -i
+```
+
+
+
 ### 硬盘
 ```
 curl -sL yabs.sh | bash -s -- -i -g
