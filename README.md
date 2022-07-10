@@ -19,8 +19,6 @@ curl -sL yabs.sh | bash -s -- -f -g
 ```
 
 ### 回程路由
-[BestTrace](https://www.ipip.net/product/client.html)
-
 [NextTrace Enhanced](https://github.com/OwO-Network/nexttrace-enhanced)
 
 ### 流媒体解锁
