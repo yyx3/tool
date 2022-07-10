@@ -1,5 +1,3 @@
-## VPS测试工具
-
 ### 综合
 ```
 curl -fsSL http://ilemonra.in/LemonBenchIntl | bash -s fast
