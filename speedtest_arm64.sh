@@ -15,18 +15,12 @@ speed_test() {
 }
 
 speed() {
-    speed_test '44988'  'Tokyo 1'
-    speed_test '28910'  'Tokyo 2'
-    speed_test '21569'  'Tokyo 3'
-    speed_test '44745'  'Hong Kong 1'
-    speed_test '28912'  'Hong Kong 2'
-    speed_test '22126'  'Hong Kong 3'
-    speed_test '45895'  'Singapore 1'
-    speed_test '26654'  'Singapore 2'
-    speed_test '40508'  'Singapore 3'
-    speed_test '35056'  'Los Angeles'
-    speed_test '35608'  'Atlanta'
-    speed_test '35055'  'New York'
+    speed_test ''  'Local'
+    speed_test '28910'  'Tokyo'
+    speed_test '28912'  'Hong Kong'
+    speed_test '26654'  'Singapore'
+    speed_test '9916'  'Los Angeles'
+    speed_test '9913'  'Amsterdam'
 }
 
 mkdir -p /root/speedtest-cli && curl -sSLo /root/speedtest-cli/speedtest https://github.com/chika0801/tool/raw/main/speedtest_arm64 && chmod +x /root/speedtest-cli/speedtest
