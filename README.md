@@ -19,7 +19,23 @@ curl -sL yabs.sh | bash -s -- -f -g
 ```
 
 ### 回程路由
-[NextTrace Enhanced](https://github.com/OwO-Network/nexttrace-enhanced)
+BestTrace
+```
+curl -LO https://github.com/chika0801/tool/raw/main/besttrace && chmod +x besttrace
+```
+
+```
+./besttrace -q 1 IP
+```
+
+NextTrace Enhanced
+```
+bash <(curl -Ls https://raw.githubusercontent.com/OwO-Network/nexttrace-enhanced/main/nt_install.sh)
+```
+
+```
+nexttrace -T -q 1 -table IP
+```
 
 ### 流媒体解锁
 ```
