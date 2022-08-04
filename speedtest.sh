@@ -15,7 +15,6 @@ speed_test() {
 }
 
 speed() {
-    speed_test ''  'Local'
     speed_test '28910'  'Tokyo'
     speed_test '28912'  'Hong Kong'
     speed_test '26654'  'Singapore'
