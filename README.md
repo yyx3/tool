@@ -37,6 +37,21 @@ bash <(curl -Ls https://raw.githubusercontent.com/OwO-Network/nexttrace-enhanced
 nexttrace -T -q 1 -table IP
 ```
 
+### MTR
+```
+apt install -y mtr
+```
+
+```
+mtr -T -s 1400 27.11.40.80
+```
+
+或
+
+```
+mtr -T -s 1400 -c 1000 -r 27.11.40.80
+```
+
 ### 流媒体解锁
 ```
 bash <(curl -L -s check.unlock.media)
