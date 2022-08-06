@@ -64,7 +64,7 @@ curl -Lo nf https://github.com/sjlleo/netflix-verify/releases/download/v3.1.0/nf
 ```
 
 ```
-./nf && echo && ./dp && echo && ./ytb
+./nf && ./dp && ./ytb
 ```
 
 ### 测速
