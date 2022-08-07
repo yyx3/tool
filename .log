@@ -1,0 +1,262 @@
+--------- beginning of main
+08-07 13:29:32.385 D/com.v2ray.ang(25061): {
+08-07 13:29:32.385 D/com.v2ray.ang(25061):     "log": {
+08-07 13:29:32.385 D/com.v2ray.ang(25061):         "access": "",
+08-07 13:29:32.385 D/com.v2ray.ang(25061):         "error": "",
+08-07 13:29:32.385 D/com.v2ray.ang(25061):         "loglevel": "debug"
+08-07 13:29:32.385 D/com.v2ray.ang(25061):     },
+08-07 13:29:32.385 D/com.v2ray.ang(25061):     "dns": {
+08-07 13:29:32.385 D/com.v2ray.ang(25061):         "servers": [
+08-07 13:29:32.385 D/com.v2ray.ang(25061):             "fakedns",
+08-07 13:29:32.385 D/com.v2ray.ang(25061):             "1.1.1.1"
+08-07 13:29:32.385 D/com.v2ray.ang(25061):         ],
+08-07 13:29:32.385 D/com.v2ray.ang(25061):         "queryStrategy": "UseIPv4"
+08-07 13:29:32.385 D/com.v2ray.ang(25061):     },
+08-07 13:29:32.385 D/com.v2ray.ang(25061):     "routing": {
+08-07 13:29:32.385 D/com.v2ray.ang(25061):         "domainStrategy": "IPIfNonMatch",
+08-07 13:29:32.385 D/com.v2ray.ang(25061):         "rules": [
+08-07 13:29:32.385 D/com.v2ray.ang(25061):             {
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                 "type": "field",
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                 "inboundTag": [
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                     "dns-in"
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                 ],
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                 "outboundTag": "dns-out"
+08-07 13:29:32.385 D/com.v2ray.ang(25061):             },
+08-07 13:29:32.385 D/com.v2ray.ang(25061):             {
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                 "type": "field",
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                 "ip": [
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                     "1.1.1.1"
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                 ],
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                 "outboundTag": "proxy"
+08-07 13:29:32.385 D/com.v2ray.ang(25061):             },
+08-07 13:29:32.385 D/com.v2ray.ang(25061):             {
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                 "type": "field",
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                 "domain": [
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                     "geosite:category-ads-all"
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                 ],
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                 "outboundTag": "block"
+08-07 13:29:32.385 D/com.v2ray.ang(25061):             },
+08-07 13:29:32.385 D/com.v2ray.ang(25061):             {
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                 "type": "field",
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                 "domain": [
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                     "geosite:geolocation-!cn"
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                 ],
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                 "outboundTag": "proxy"
+08-07 13:29:32.385 D/com.v2ray.ang(25061):             },
+08-07 13:29:32.385 D/com.v2ray.ang(25061):             {
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                 "type": "field",
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                 "domain": [
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                     "geosite:tld-cn",
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                     "geosite:cn"
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                 ],
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                 "outboundTag": "direct"
+08-07 13:29:32.385 D/com.v2ray.ang(25061):             },
+08-07 13:29:32.385 D/com.v2ray.ang(25061):             {
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                 "type": "field",
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                 "ip": [
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                     "geoip:cn",
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                     "geoip:private"
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                 ],
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                 "outboundTag": "direct"
+08-07 13:29:32.385 D/com.v2ray.ang(25061):             }
+08-07 13:29:32.385 D/com.v2ray.ang(25061):         ]
+08-07 13:29:32.385 D/com.v2ray.ang(25061):     },
+08-07 13:29:32.385 D/com.v2ray.ang(25061):     "inbounds": [
+08-07 13:29:32.385 D/com.v2ray.ang(25061):         {
+08-07 13:29:32.385 D/com.v2ray.ang(25061):             "listen": "127.0.0.1",
+08-07 13:29:32.385 D/com.v2ray.ang(25061):             "port": 10808,
+08-07 13:29:32.385 D/com.v2ray.ang(25061):             "protocol": "socks",
+08-07 13:29:32.385 D/com.v2ray.ang(25061):             "settings": {
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                 "udp": true
+08-07 13:29:32.385 D/com.v2ray.ang(25061):             },
+08-07 13:29:32.385 D/com.v2ray.ang(25061):             "sniffing": {
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                 "enabled": true,
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                 "destOverride": [
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                     "fakedns+others"
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                 ]
+08-07 13:29:32.385 D/com.v2ray.ang(25061):             }
+08-07 13:29:32.385 D/com.v2ray.ang(25061):         },
+08-07 13:29:32.385 D/com.v2ray.ang(25061):         {
+08-07 13:29:32.385 D/com.v2ray.ang(25061):             "listen": "127.0.0.1",
+08-07 13:29:32.385 D/com.v2ray.ang(25061):             "port": 10809,
+08-07 13:29:32.385 D/com.v2ray.ang(25061):             "protocol": "http",
+08-07 13:29:32.385 D/com.v2ray.ang(25061):             "sniffing": {
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                 "enabled": true,
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                 "destOverride": [
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                     "fakedns+others"
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                 ]
+08-07 13:29:32.385 D/com.v2ray.ang(25061):             }
+08-07 13:29:32.385 D/com.v2ray.ang(25061):         },
+08-07 13:29:32.385 D/com.v2ray.ang(25061):         {
+08-07 13:29:32.385 D/com.v2ray.ang(25061):             "listen": "127.0.0.1",
+08-07 13:29:32.385 D/com.v2ray.ang(25061):             "port": 10853,
+08-07 13:29:32.385 D/com.v2ray.ang(25061):             "protocol": "dokodemo-door",
+08-07 13:29:32.385 D/com.v2ray.ang(25061):             "settings": {
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                 "address": "1.1.1.1",
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                 "port": 53,
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                 "network": "tcp,udp"
+08-07 13:29:32.385 D/com.v2ray.ang(25061):             },
+08-07 13:29:32.385 D/com.v2ray.ang(25061):             "tag": "dns-in"
+08-07 13:29:32.385 D/com.v2ray.ang(25061):         }
+08-07 13:29:32.385 D/com.v2ray.ang(25061):     ],
+08-07 13:29:32.385 D/com.v2ray.ang(25061):     "outbounds": [
+08-07 13:29:32.385 D/com.v2ray.ang(25061):         {
+08-07 13:29:32.385 D/com.v2ray.ang(25061):             "protocol": "vless",
+08-07 13:29:32.385 D/com.v2ray.ang(25061):             "settings": {
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                 "vnext": [
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                     {
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                         "address": "206.190.238.177",
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                         "port": 443,
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                         "users": [
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                             {
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                                 "id": "chika",
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                                 "encryption": "none"
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                             }
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                         ]
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                     }
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                 ]
+08-07 13:29:32.385 D/com.v2ray.ang(25061):             },
+08-07 13:29:32.385 D/com.v2ray.ang(25061):             "streamSettings": {
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                 "network": "tcp",
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                 "security": "tls",
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                 "tlsSettings": {
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                     "serverName": "lovelive-sif.top",
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                     "allowInsecure": false
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                 }
+08-07 13:29:32.385 D/com.v2ray.ang(25061):             },
+08-07 13:29:32.385 D/com.v2ray.ang(25061):             "tag": "proxy"
+08-07 13:29:32.385 D/com.v2ray.ang(25061):         },
+08-07 13:29:32.385 D/com.v2ray.ang(25061):         {
+08-07 13:29:32.385 D/com.v2ray.ang(25061):             "protocol": "freedom",
+08-07 13:29:32.385 D/com.v2ray.ang(25061):             "settings": {
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                 "domainStrategy": "AsIs"
+08-07 13:29:32.385 D/com.v2ray.ang(25061):             },
+08-07 13:29:32.385 D/com.v2ray.ang(25061):             "tag": "direct"
+08-07 13:29:32.385 D/com.v2ray.ang(25061):         },
+08-07 13:29:32.385 D/com.v2ray.ang(25061):         {
+08-07 13:29:32.385 D/com.v2ray.ang(25061):             "protocol": "blackhole",
+08-07 13:29:32.385 D/com.v2ray.ang(25061):             "settings": {
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                 "response": {
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                     "type": "http"
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                 }
+08-07 13:29:32.385 D/com.v2ray.ang(25061):             },
+08-07 13:29:32.385 D/com.v2ray.ang(25061):             "tag": "block"
+08-07 13:29:32.385 D/com.v2ray.ang(25061):         },
+08-07 13:29:32.385 D/com.v2ray.ang(25061):         {
+08-07 13:29:32.385 D/com.v2ray.ang(25061):             "protocol": "dns",
+08-07 13:29:32.385 D/com.v2ray.ang(25061):             "proxySettings": {
+08-07 13:29:32.385 D/com.v2ray.ang(25061):                 "tag": "proxy"
+08-07 13:29:32.385 D/com.v2ray.ang(25061):             },
+08-07 13:29:32.385 D/com.v2ray.ang(25061):             "tag": "dns-out"
+08-07 13:29:32.385 D/com.v2ray.ang(25061):         }
+08-07 13:29:32.385 D/com.v2ray.ang(25061):     ]
+08-07 13:29:32.385 D/com.v2ray.ang(25061): }
+08-07 13:29:32.388 I/GoLog   (25061): loading core config
+08-07 13:29:32.388 I/GoLog   (25061): Preparing Domain: 206.190.238.177:443
+08-07 13:29:32.388 I/GoLog   (25061): Prepare Result:
+08-07 13:29:32.388 I/GoLog   (25061):  Domain: 206.190.238.177
+08-07 13:29:32.388 I/GoLog   (25061):  Port: 443
+08-07 13:29:32.388 I/GoLog   (25061):  IPs: [206.190.238.177]
+08-07 13:29:32.969 I/GoLog   (25061): new core
+08-07 13:29:32.972 I/GoLog   (25061): [Debug] app/log: Logger started
+08-07 13:29:33.005 I/GoLog   (25061): [Info] app/dns: DNS: created UDP client initialized for 1.1.1.1:53
+08-07 13:29:33.104 I/GoLog   (25061): [Debug] app/router: MphDomainMatcher is enabled for 54020 domain rule(s)
+08-07 13:29:33.162 I/GoLog   (25061): [Debug] app/router: MphDomainMatcher is enabled for 32300 domain rule(s)
+08-07 13:29:33.296 I/GoLog   (25061): start core
+08-07 13:29:33.296 I/GoLog   (25061): [Debug] app/router: MphDomainMatcher is enabled for 66675 domain rule(s)
+08-07 13:29:33.296 I/GoLog   (25061): [Debug] app/proxyman/inbound: creating stream worker on 127.0.0.1:10808
+08-07 13:29:33.296 I/GoLog   (25061): [Debug] app/proxyman/inbound: creating stream worker on 127.0.0.1:10809
+08-07 13:29:33.296 I/GoLog   (25061): [Debug] app/proxyman/inbound: creating stream worker on 127.0.0.1:10853
+08-07 13:29:33.296 I/GoLog   (25061): [Info] transport/internet/tcp: listening TCP on 127.0.0.1:10853
+08-07 13:29:33.296 I/GoLog   (25061): [Info] transport/internet/udp: listening UDP on 127.0.0.1:10853
+08-07 13:29:33.296 I/GoLog   (25061): [Info] transport/internet/tcp: listening TCP on 127.0.0.1:10808
+08-07 13:29:33.296 I/GoLog   (25061): [Info] transport/internet/udp: listening UDP on 127.0.0.1:10808
+08-07 13:29:33.296 I/GoLog   (25061): [Info] transport/internet/tcp: listening TCP on 127.0.0.1:10809
+08-07 13:29:33.296 I/GoLog   (25061): [Warning] core: Xray 1.5.9 started
+08-07 13:29:33.351 D/com.v2ray.ang(25061): [/data/app/~~KMoluogJ1qVnlRq-9-ub5w==/com.v2ray.ang-BcVCsIWwd9EeOMF2jiCtRA==/lib/arm64/libtun2socks.so, --netif-ipaddr, 26.26.26.2, --netif-netmask, 255.255.255.252, --socks-server-addr, 127.0.0.1:10808, --tunmtu, 1500, --sock-path, sock_path, --enable-udprelay, --loglevel, notice, --dnsgw, 127.0.0.1:10853]
+08-07 13:29:33.358 D/com.v2ray.ang(25061): Process[pid=30867, hasExited=false]
+08-07 13:29:33.358 D/com.v2ray.ang(25061): /data/user/0/com.v2ray.ang/files/sock_path
+08-07 13:29:33.367 I/tun2socks(30867): NOTICE(tun2socks): initializing BadVPN tun2socks 1.999.130
+08-07 13:29:33.408 D/com.v2ray.ang(25061): sendFd tries: 0
+08-07 13:29:33.410 I/tun2socks(30867): NOTICE(tun2socks): entering event loop
+08-07 13:29:33.411 I/GoLog   (25061): [Debug] [1854335951] proxy/dokodemo: processing connection from: 127.0.0.1:46948
+08-07 13:29:33.411 I/GoLog   (25061): [Info] [1854335951] proxy/dokodemo: received request for 127.0.0.1:46948
+08-07 13:29:33.411 I/GoLog   (25061): [Debug] [763449865] proxy/dokodemo: processing connection from: 127.0.0.1:47701
+08-07 13:29:33.411 I/GoLog   (25061): [Info] [763449865] proxy/dokodemo: received request for 127.0.0.1:47701
+08-07 13:29:33.411 I/GoLog   (25061): [Info] [1854335951] app/dispatcher: taking detour [dns-out] for [udp:1.1.1.1:53]
+08-07 13:29:33.411 I/GoLog   (25061): [Info] [1854335951] proxy/dns: handling DNS traffic to udp:1.1.1.1:53
+08-07 13:29:33.411 I/GoLog   (25061): [Info] [763449865] app/dispatcher: taking detour [dns-out] for [udp:1.1.1.1:53]
+08-07 13:29:33.411 I/GoLog   (25061): [Info] [763449865] proxy/dns: handling DNS traffic to udp:1.1.1.1:53
+08-07 13:29:33.411 I/GoLog   (25061): 127.0.0.1:46948 accepted udp:1.1.1.1:53 [dns-in -> dns-out]
+08-07 13:29:33.411 I/GoLog   (25061): 127.0.0.1:47701 accepted udp:1.1.1.1:53 [dns-in -> dns-out]
+08-07 13:29:33.411 I/GoLog   (25061): [Debug] app/dns: domain alt3-mtalk.google.com will use DNS in order: [FakeDNS UDP:1.1.1.1:53]
+08-07 13:29:33.411 I/GoLog   (25061): [Info] app/dns: FakeDNS got answer: alt3-mtalk.google.com -> [198.19.171.227]
+08-07 13:29:33.464 I/GoLog   (25061): [Info] [2890070547] proxy/socks: TCP Connect request to tcp:198.19.171.227:443
+08-07 13:29:33.464 I/GoLog   (25061): [Info] [2890070547] app/dispatcher: fake dns got domain: alt3-mtalk.google.com for ip: 198.19.171.227
+08-07 13:29:33.466 I/GoLog   (25061): Not Using Prepared: tcp,198.19.171.227:443
+08-07 13:29:33.466 I/GoLog   (25061): [Info] [2890070547] app/dispatcher: taking detour [direct] for [tcp:198.19.171.227:443]
+08-07 13:29:33.466 I/GoLog   (25061): [Info] [2890070547] proxy/freedom: opening connection to tcp:198.19.171.227:443
+08-07 13:29:33.466 I/GoLog   (25061): [Info] [2890070547] transport/internet/tcp: dialing TCP to tcp:198.19.171.227:443
+08-07 13:29:33.466 I/GoLog   (25061): tcp:127.0.0.1:43718 accepted tcp:198.19.171.227:443 [direct]
+08-07 13:29:34.710 I/GoLog   (25061): [Debug] [3425543980] proxy/dokodemo: processing connection from: 127.0.0.1:40800
+08-07 13:29:34.711 I/GoLog   (25061): [Info] [3425543980] proxy/dokodemo: received request for 127.0.0.1:40800
+08-07 13:29:34.711 I/GoLog   (25061): 127.0.0.1:40800 accepted udp:1.1.1.1:53 [dns-in -> dns-out]
+08-07 13:29:34.711 I/GoLog   (25061): [Info] [3425543980] app/dispatcher: taking detour [dns-out] for [udp:1.1.1.1:53]
+08-07 13:29:34.711 I/GoLog   (25061): [Info] [3425543980] proxy/dns: handling DNS traffic to udp:1.1.1.1:53
+08-07 13:29:34.711 I/GoLog   (25061): [Debug] app/dns: domain safebrowsing.google.com will use DNS in order: [FakeDNS UDP:1.1.1.1:53]
+08-07 13:29:34.711 I/GoLog   (25061): [Info] app/dns: FakeDNS got answer: safebrowsing.google.com -> [198.19.176.246]
+08-07 13:29:34.716 I/GoLog   (25061): [Info] [1752285150] proxy/socks: TCP Connect request to tcp:198.19.176.246:443
+08-07 13:29:34.716 I/GoLog   (25061): Not Using Prepared: tcp,198.19.176.246:443
+08-07 13:29:34.716 I/GoLog   (25061): [Info] [1752285150] app/dispatcher: fake dns got domain: safebrowsing.google.com for ip: 198.19.176.246
+08-07 13:29:34.716 I/GoLog   (25061): [Info] [1752285150] app/dispatcher: taking detour [direct] for [tcp:198.19.176.246:443]
+08-07 13:29:34.716 I/GoLog   (25061): [Info] [1752285150] proxy/freedom: opening connection to tcp:198.19.176.246:443
+08-07 13:29:34.716 I/GoLog   (25061): [Info] [1752285150] transport/internet/tcp: dialing TCP to tcp:198.19.176.246:443
+08-07 13:29:34.716 I/GoLog   (25061): tcp:127.0.0.1:43724 accepted tcp:198.19.176.246:443 [direct]
+08-07 13:29:34.720 I/GoLog   (25061): [Debug] [4205891789] proxy/dokodemo: processing connection from: 127.0.0.1:49392
+08-07 13:29:34.720 I/GoLog   (25061): [Info] [4205891789] proxy/dokodemo: received request for 127.0.0.1:49392
+08-07 13:29:34.720 I/GoLog   (25061): [Info] [4205891789] app/dispatcher: taking detour [dns-out] for [udp:1.1.1.1:53]
+08-07 13:29:34.720 I/GoLog   (25061): [Info] [4205891789] proxy/dns: handling DNS traffic to udp:1.1.1.1:53
+08-07 13:29:34.720 I/GoLog   (25061): 127.0.0.1:49392 accepted udp:1.1.1.1:53 [dns-in -> dns-out]
+08-07 13:29:34.720 I/GoLog   (25061): [Debug] app/dns: domain github.com will use DNS in order: [FakeDNS UDP:1.1.1.1:53]
+08-07 13:29:34.720 I/GoLog   (25061): [Info] app/dns: FakeDNS got answer: github.com -> [198.19.176.255]
+08-07 13:29:34.723 I/GoLog   (25061): [Info] [1164472504] proxy/socks: TCP Connect request to tcp:198.19.176.255:443
+08-07 13:29:34.723 I/GoLog   (25061): [Info] [1164472504] app/dispatcher: fake dns got domain: github.com for ip: 198.19.176.255
+08-07 13:29:34.723 I/GoLog   (25061): Not Using Prepared: tcp,198.19.176.255:443
+08-07 13:29:34.723 I/GoLog   (25061): [Info] [1164472504] app/dispatcher: taking detour [direct] for [tcp:198.19.176.255:443]
+08-07 13:29:34.723 I/GoLog   (25061): [Info] [1164472504] proxy/freedom: opening connection to tcp:198.19.176.255:443
+08-07 13:29:34.723 I/GoLog   (25061): [Info] [1164472504] transport/internet/tcp: dialing TCP to tcp:198.19.176.255:443
+08-07 13:29:34.723 I/GoLog   (25061): tcp:127.0.0.1:43730 accepted tcp:198.19.176.255:443 [direct]
+08-07 13:29:34.745 I/GoLog   (25061): [Debug] [3523956437] proxy/dokodemo: processing connection from: 127.0.0.1:49800
+08-07 13:29:34.745 I/GoLog   (25061): [Info] [3523956437] proxy/dokodemo: received request for 127.0.0.1:49800
+08-07 13:29:34.745 I/GoLog   (25061): [Info] [3523956437] app/dispatcher: taking detour [dns-out] for [udp:1.1.1.1:53]
+08-07 13:29:34.746 I/GoLog   (25061): [Info] [3523956437] proxy/dns: handling DNS traffic to udp:1.1.1.1:53
+08-07 13:29:34.746 I/GoLog   (25061): 127.0.0.1:49800 accepted udp:1.1.1.1:53 [dns-in -> dns-out]
+08-07 13:29:34.746 I/GoLog   (25061): [Debug] app/dns: domain safebrowsing.googleapis.com will use DNS in order: [FakeDNS UDP:1.1.1.1:53]
+08-07 13:29:34.746 I/GoLog   (25061): [Info] app/dns: FakeDNS got answer: safebrowsing.googleapis.com -> [198.19.177.26]
+08-07 13:29:34.754 I/GoLog   (25061): [Info] [303095753] proxy/socks: TCP Connect request to tcp:198.19.177.26:443
+08-07 13:29:34.754 I/GoLog   (25061): [Info] [303095753] app/dispatcher: fake dns got domain: safebrowsing.googleapis.com for ip: 198.19.177.26
+08-07 13:29:34.754 I/GoLog   (25061): Not Using Prepared: tcp,198.19.177.26:443
+08-07 13:29:34.755 I/GoLog   (25061): [Info] [303095753] app/dispatcher: taking detour [direct] for [tcp:198.19.177.26:443]
+08-07 13:29:34.755 I/GoLog   (25061): [Info] [303095753] proxy/freedom: opening connection to tcp:198.19.177.26:443
+08-07 13:29:34.755 I/GoLog   (25061): [Info] [303095753] transport/internet/tcp: dialing TCP to tcp:198.19.177.26:443
+08-07 13:29:34.755 I/GoLog   (25061): tcp:127.0.0.1:43736 accepted tcp:198.19.177.26:443 [direct]
+08-07 13:29:37.383 I/GoLog   (25061): [Info] [3536192342] proxy/socks: TCP Connect request to tcp:91.108.56.191:5222
+08-07 13:29:37.384 I/GoLog   (25061): [Info] [3536192342] app/dispatcher: default route for tcp:91.108.56.191:5222
+08-07 13:29:37.384 I/GoLog   (25061): [Info] [3536192342] transport/internet/tcp: dialing TCP to tcp:206.190.238.177:443
+08-07 13:29:37.384 I/GoLog   (25061): tcp:127.0.0.1:43742 accepted tcp:91.108.56.191:5222 [proxy]
+08-07 13:29:37.536 I/GoLog   (25061): Using Prepared: 206.190.238.177
+08-07 13:29:37.537 I/GoLog   (25061): [Info] [3536192342] proxy/vless/outbound: tunneling request to tcp:91.108.56.191:5222 via 206.190.238.177:443
+08-07 13:29:38.057 I/GoLog   (25061): [Debug] [678493961] proxy/dokodemo: processing connection from: 127.0.0.1:46886
+08-07 13:29:38.057 I/GoLog   (25061): [Info] [678493961] proxy/dokodemo: received request for 127.0.0.1:46886
+08-07 13:29:38.057 I/GoLog   (25061): [Info] [678493961] app/dispatcher: taking detour [dns-out] for [udp:1.1.1.1:53]
+08-07 13:29:38.057 I/GoLog   (25061): [Info] [678493961] proxy/dns: handling DNS traffic to udp:1.1.1.1:53
+08-07 13:29:38.057 I/GoLog   (25061): [Debug] app/dns: domain api.github.com will use DNS in order: [FakeDNS UDP:1.1.1.1:53]
+08-07 13:29:38.057 I/GoLog   (25061): 127.0.0.1:46886 accepted udp:1.1.1.1:53 [dns-in -> dns-out]
+08-07 13:29:38.057 I/GoLog   (25061): [Info] app/dns: FakeDNS got answer: api.github.com -> [198.19.190.9]
+08-07 13:29:38.063 I/GoLog   (25061): [Info] [829203202] proxy/socks: TCP Connect request to tcp:198.19.190.9:443
+08-07 13:29:38.063 I/GoLog   (25061): [Info] [829203202] app/dispatcher: fake dns got domain: api.github.com for ip: 198.19.190.9
+08-07 13:29:38.063 I/GoLog   (25061): [Info] [829203202] app/dispatcher: taking detour [direct] for [tcp:198.19.190.9:443]
+08-07 13:29:38.063 I/GoLog   (25061): [Info] [829203202] proxy/freedom: opening connection to tcp:198.19.190.9:443
+08-07 13:29:38.063 I/GoLog   (25061): Not Using Prepared: tcp,198.19.190.9:443
+08-07 13:29:38.064 I/GoLog   (25061): tcp:127.0.0.1:43748 accepted tcp:198.19.190.9:443 [direct]
+08-07 13:29:38.064 I/GoLog   (25061): [Info] [829203202] transport/internet/tcp: dialing TCP to tcp:198.19.190.9:443
