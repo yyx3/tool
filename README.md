@@ -37,7 +37,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/OwO-Network/nexttrace-enhanced
 nexttrace -T IP
 ```
 
-### MTR
+MTR
 ```
 apt install -y mtr
 ```
