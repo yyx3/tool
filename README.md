@@ -100,3 +100,16 @@ docker run -d -p 5000:80 badapple9/speedtest-x
 ```
 IP:5000
 ```
+
+### iPerf3
+```
+apt install -y iperf3
+```
+
+```
+iperf3 -s
+```
+
+```
+iperf3 -c IP
+```
