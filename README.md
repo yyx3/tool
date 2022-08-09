@@ -102,6 +102,3 @@ docker run -d -p 5000:80 badapple9/speedtest-x
 ```
 IP:5000
 ```
-
-![sp](https://user-images.githubusercontent.com/88967758/183491760-53cffb1b-d196-4cff-be69-103606774dea.jpg)
-
