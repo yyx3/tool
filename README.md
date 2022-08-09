@@ -1,21 +1,21 @@
 ### 综合
 ```
-curl -fsSL http://ilemonra.in/LemonBenchIntl | bash -s fast
+curl -sL yabs.sh | bash
 ```
 
 ### CPU
 ```
-curl -sL yabs.sh | bash -s -- -f -i
+curl -sL yabs.sh | bash -s -- -fi
 ```
 
 ### 硬盘
 ```
-curl -sL yabs.sh | bash -s -- -i -g
+curl -sL yabs.sh | bash -s -- -ig
 ```
 
 ### 网络
 ```
-curl -sL yabs.sh | bash -s -- -f -g
+curl -sL yabs.sh | bash -s -- -fg
 ```
 
 ### 回程路由
@@ -25,7 +25,7 @@ curl -LO https://github.com/chika0801/tool/raw/main/besttrace && chmod +x besttr
 ```
 
 ```
-./besttrace -q 1 IP
+./besttrace -T IP
 ```
 
 NextTrace Enhanced
@@ -34,7 +34,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/OwO-Network/nexttrace-enhanced
 ```
 
 ```
-nexttrace -T -q 1 -table IP
+nexttrace -T IP
 ```
 
 ### MTR
