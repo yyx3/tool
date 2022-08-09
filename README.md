@@ -46,12 +46,6 @@ apt install -y mtr
 mtr -T -s 1400 IP
 ```
 
-或
-
-```
-mtr -T -s 1400 -c 10 -r IP
-```
-
 ### 流媒体解锁
 ```
 bash <(curl -L -s check.unlock.media)
