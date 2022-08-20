@@ -1,25 +1,31 @@
 ### 综合
+
 ```
 curl -sL yabs.sh | bash
 ```
 
 ### CPU
+
 ```
 curl -sL yabs.sh | bash -s -- -fi
 ```
 
 ### 硬盘
+
 ```
 curl -sL yabs.sh | bash -s -- -ig
 ```
 
 ### 网络
+
 ```
 curl -sL yabs.sh | bash -s -- -fg
 ```
 
 ### 回程路由
+
 BestTrace
+
 ```
 curl -LO https://github.com/chika0801/tool/raw/main/besttrace && chmod +x besttrace
 ```
@@ -29,6 +35,7 @@ curl -LO https://github.com/chika0801/tool/raw/main/besttrace && chmod +x besttr
 ```
 
 NextTrace Enhanced
+
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/OwO-Network/nexttrace-enhanced/main/nt_install.sh)
 ```
@@ -42,6 +49,7 @@ nexttrace -U IP
 ```
 
 MTR
+
 ```
 apt install -y mtr
 ```
@@ -51,6 +59,7 @@ mtr -T -s 1400 IP
 ```
 
 ### 流媒体解锁
+
 ```
 bash <(curl -L -s check.unlock.media)
 ```
@@ -66,6 +75,7 @@ curl -Lo nf https://github.com/sjlleo/netflix-verify/releases/download/v3.1.0/nf
 ```
 
 ### 测速
+
 ```
 curl -L https://raw.githubusercontent.com/chika0801/tool/main/speedtest.sh | bash
 ```
@@ -89,6 +99,7 @@ https://www.speedtest.net/api/js/perform-redirect?server_id=服务器ID
 ```
 
 ### 在线测速
+
 ```
 curl -sSL https://get.docker.com/ | sh && systemctl enable docker && systemctl start docker
 ```
@@ -102,6 +113,7 @@ IP:5000
 ```
 
 ### iPerf3
+
 ```
 apt install -y iperf3
 ```
