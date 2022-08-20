@@ -31,7 +31,7 @@ curl -LO https://github.com/chika0801/tool/raw/main/besttrace && chmod +x besttr
 ```
 
 ```
-./besttrace -T IP
+./besttrace --tcp IP
 ```
 
 NextTrace Enhanced
@@ -41,11 +41,11 @@ bash <(curl -Ls https://raw.githubusercontent.com/OwO-Network/nexttrace-enhanced
 ```
 
 ```
-nexttrace -T IP
+nexttrace -T -table IP
 ```
 
 ```
-nexttrace -U IP
+nexttrace -U -table IP
 ```
 
 MTR
@@ -55,7 +55,11 @@ apt install -y mtr
 ```
 
 ```
-mtr -T -s 1400 IP
+mtr --tcp --psize 1400 IP
+```
+
+```
+mtr --udp IP
 ```
 
 ### 流媒体解锁
@@ -119,9 +123,9 @@ apt install -y iperf3
 ```
 
 ```
-iperf3 -s
+iperf3 --server
 ```
 
 ```
-iperf3 -c IP
+iperf3 --client IP
 ```
