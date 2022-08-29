@@ -65,7 +65,7 @@ mtr --udp IP
 ### 流媒体解锁
 
 ```
-bash <(curl -L -s check.unlock.media)
+bash <(curl -L -s https://github.com/guaguaya66/RegionRestrictionCheck-FakeTest/raw/main/check.sh)
 ```
 
 或
