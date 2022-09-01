@@ -27,4 +27,4 @@ speed() {
 
 mkdir -p /root/speedtest-cli && curl -sSLo /root/speedtest-cli/speedtest https://github.com/chika0801/tool/raw/main/speedtest && chmod +x /root/speedtest-cli/speedtest
 clear && printf "%-18s%-18s%-20s%-12s\n" " Node Name" "Upload Speed" "Download Speed" "Latency"
-speed && rm -fr speedtest-cli && rm -fr .config
+speed && rm -fr speedtest-cli && rm -fr .config/ookla
