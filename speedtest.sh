@@ -15,14 +15,21 @@ speed_test() {
 }
 
 speed() {
+    speed_test '34988'  'Shenyang CT'
+    speed_test '5396'  'Suzhou CT'
+    speed_test '36663'  'Zhenjiang CT'
+    speed_test '26352'  'Nanjing CT'
+    speed_test '34115'  'TianJin CT'
+    speed_test '17145'  'Hefei CT'
+    speed_test '28946'  'ChongQing CT'
+    speed_test '24447'  'ShangHai CU'
+    speed_test '36646'  'Zhengzhou CU'
+    speed_test '6715'  'Hangzhou CM'
+    speed_test '41910'  'Zhengzhou CM'
     speed_test '44988'  'Tokyo'
     speed_test '44745'  'Hong Kong'
     speed_test '45895'  'Singapore'
     speed_test '49365'  'San Jose'
-    speed_test '50679'  'Seattle'
-    speed_test '45852'  'Kansas City'
-    speed_test '30561'  'Ashburn'
-    speed_test '44806'  'Moscow'
 }
 
 mkdir -p /root/speedtest-cli && curl -sSLo /root/speedtest-cli/speedtest https://github.com/chika0801/tool/raw/main/speedtest && chmod +x /root/speedtest-cli/speedtest
