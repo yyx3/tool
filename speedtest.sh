@@ -15,13 +15,13 @@ speed_test() {
 }
 
 speed() {
+    speed_test '28946'  'ChongQing CT'
+    speed_test '17145'  'Hefei CT'
+    speed_test '26352'  'Nanjing CT'
     speed_test '34988'  'Shenyang CT'
     speed_test '5396'  'Suzhou CT'
-    speed_test '36663'  'Zhenjiang CT'
-    speed_test '26352'  'Nanjing CT'
     speed_test '34115'  'TianJin CT'
-    speed_test '17145'  'Hefei CT'
-    speed_test '28946'  'ChongQing CT'
+    speed_test '36663'  'Zhenjiang CT'
     speed_test '24447'  'ShangHai CU'
     speed_test '36646'  'Zhengzhou CU'
     speed_test '6715'  'Hangzhou CM'
