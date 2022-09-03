@@ -34,7 +34,7 @@ curl -LO https://github.com/chika0801/tool/raw/main/besttrace && chmod +x besttr
 ./besttrace --tcp IP
 ```
 
-NextTrace Enhanced
+NextTrace
 
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/xgadget-lab/nexttrace/main/nt_install.sh)
