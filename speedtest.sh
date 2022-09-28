@@ -15,8 +15,8 @@ speed_test() {
 }
 
 speed() {
-    speed_test '26352'  'Nanjing CT'
     speed_test '17145'  'Hefei CT'
+    speed_test '26352'  'Nanjing CT'
     speed_test '24447'  'ShangHai CU'
     speed_test '36646'  'Zhengzhou CU'
     speed_test '6715'  'Hangzhou CM'
