@@ -21,10 +21,10 @@ speed() {
     speed_test '36646'  'Zhengzhou CU'
     speed_test '6715'  'Hangzhou CM'
     speed_test '41910'  'Zhengzhou CM'
-    speed_test '44988'  'Tokyo'
-    speed_test '44745'  'Hong Kong'
-    speed_test '45895'  'Singapore'
-    speed_test '49365'  'San Jose'
+    speed_test '21569'  'Tokyo'
+    speed_test '22126'  'Hong Kong'
+    speed_test '40508'  'Singapore'
+    speed_test '21541'  'Los Angeles'
 }
 
 mkdir -p /root/speedtest-cli && curl -sSLo /root/speedtest-cli/speedtest https://github.com/chika0801/tool/raw/main/speedtest && chmod +x /root/speedtest-cli/speedtest
