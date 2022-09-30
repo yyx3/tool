@@ -37,7 +37,7 @@ curl -LO https://github.com/chika0801/tool/raw/main/besttrace && chmod +x besttr
 NextTrace
 
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/xgadget-lab/nexttrace/main/nt_install.sh)
+curl -Lo nexttrace https://github.com/xgadget-lab/nexttrace/releases/latest/download/nexttrace_linux_amd64 && chmod +x nexttrace
 ```
 
 ```
