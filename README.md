@@ -115,4 +115,5 @@ https://www.speedtest.net/api/js/perform-redirect?server_id=服务器ID
 ![4](https://user-images.githubusercontent.com/88967758/194460227-9e0f1c11-1506-4a5a-823d-be93b47547df.jpg)
 
 ![5](https://user-images.githubusercontent.com/88967758/194460226-810e2ced-23e6-4617-b50c-37cc487b4f40.jpg)
+
 </details>
