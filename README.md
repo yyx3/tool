@@ -105,6 +105,7 @@ https://www.speedtest.net/api/js/perform-redirect?server_id=服务器ID
 ### v2rayN推荐设置
 
 <details><summary>点击查看详细步骤</summary> 
+
 ![1](https://user-images.githubusercontent.com/88967758/194460235-218b0c6a-791d-47a1-98c7-366796a7a313.jpg)
 
 ![2](https://user-images.githubusercontent.com/88967758/194460232-5e5a8306-8804-4ecc-a14b-6c4fec5c06c4.jpg)
