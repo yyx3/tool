@@ -101,17 +101,3 @@ curl -LO https://github.com/chika0801/tool/raw/main/speedtest && chmod +x speedt
 ```
 https://www.speedtest.net/api/js/perform-redirect?server_id=服务器ID
 ```
-
-### 在线测速
-
-```
-curl -sSL https://get.docker.com/ | sh && systemctl enable docker && systemctl start docker
-```
-
-```
-docker run -d -p 5000:80 badapple9/speedtest-x
-```
-
-```
-IP:5000
-```
