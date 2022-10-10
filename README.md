@@ -81,7 +81,7 @@ curl -Lo nf https://github.com/sjlleo/netflix-verify/releases/download/v3.1.0/nf
 ### 测速
 
 ```
-curl -L https://raw.githubusercontent.com/chika0801/tool/main/speedtest.sh | bash
+curl -sL https://raw.githubusercontent.com/chika0801/tool/main/speedtest.sh | bash
 ```
 
 或
