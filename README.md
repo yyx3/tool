@@ -34,6 +34,11 @@ curl -LO https://github.com/chika0801/tool/raw/main/besttrace && chmod +x besttr
 ./besttrace --tcp IP
 ```
 
+```
+./besttrace --tcp 202.96.209.133
+```
+经过202.97(AS4134)是CN2GT
+
 NextTrace
 
 ```
