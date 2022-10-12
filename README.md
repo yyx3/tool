@@ -80,19 +80,11 @@ curl -Lo nf https://github.com/sjlleo/netflix-verify/releases/download/v3.1.0/nf
 
 ### 测速
 
-多线程
-
 ```
 curl -sL https://raw.githubusercontent.com/chika0801/tool/main/speedtest.sh | bash
 ```
 
-单线程
-
-```
-bash <(curl -Lso- https://bench.im/hyperspeed)
-```
-
-手动
+或
 
 ```
 curl -LO https://github.com/chika0801/tool/raw/main/speedtest && chmod +x speedtest
