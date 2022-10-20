@@ -95,7 +95,5 @@ curl -sL https://get.docker.com | sh && docker pull badapple9/speedtest-x && doc
 ```
 
 ```
-docker container ls -a
-docker container start
-docker container stop
+IP:5000
 ```
