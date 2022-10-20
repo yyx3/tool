@@ -89,5 +89,5 @@ curl -sL https://get.docker.com | sh && docker pull badapple9/speedtest-x && doc
 ```
 
 ```
-http://VPS IP:5000
+http://VPS的IP:5000
 ```
