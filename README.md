@@ -87,7 +87,3 @@ curl -LO https://github.com/chika0801/tool/raw/main/speedtest && chmod +x speedt
 ```
 curl -sL https://get.docker.com | sh && docker pull badapple9/speedtest-x && docker run -d -p 5000:80 -it badapple9/speedtest-x
 ```
-
-```
-VPS的IP:5000
-```
