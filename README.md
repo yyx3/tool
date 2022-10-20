@@ -1,9 +1,3 @@
-### 综合
-
-```
-curl -sL yabs.sh | bash
-```
-
 ### CPU
 
 ```
