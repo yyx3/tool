@@ -92,6 +92,4 @@ curl -LO https://github.com/chika0801/tool/raw/main/speedtest && chmod +x speedt
 
 ![ID](https://user-images.githubusercontent.com/88967758/181433447-a394e038-50d1-41ef-ba15-f708dfda1b09.jpg)
 
-```
-https://www.speedtest.net/api/js/perform-redirect?server_id=服务器ID
-```
+https://www.speedtest.net/api/js/perform-redirect?server_id=`服务器ID`
