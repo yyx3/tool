@@ -53,7 +53,7 @@ mtr --tcp --psize 1400 IP
 ```
 
 ```
-mtr --udp IP
+mtr --udp --psize 1400 IP
 ```
 
 ### 流媒体解锁
