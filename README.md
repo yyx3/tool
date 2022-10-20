@@ -29,11 +29,11 @@ curl -Lo nexttrace https://github.com/xgadget-lab/nexttrace/releases/latest/down
 ```
 
 ```
-nexttrace -T -table IP
+./nexttrace -T -table IP
 ```
 
 ```
-nexttrace -U -table IP
+./nexttrace -U -table IP
 ```
 
 MTR
