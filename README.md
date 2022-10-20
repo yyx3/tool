@@ -16,12 +16,6 @@ curl -sL yabs.sh | bash -s -- -fi
 curl -sL yabs.sh | bash -s -- -ig
 ```
 
-### 网络
-
-```
-curl -sL yabs.sh | bash -s -- -fg
-```
-
 ### 回程路由
 
 BestTrace
