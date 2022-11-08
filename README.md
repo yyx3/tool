@@ -19,6 +19,10 @@ curl -LO https://github.com/chika0801/tool/raw/main/besttrace && chmod +x besttr
 ```
 
 ```
+./besttrace IP
+```
+
+```
 ./besttrace --tcp IP
 ```
 
